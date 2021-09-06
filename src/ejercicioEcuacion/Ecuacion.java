@@ -16,8 +16,27 @@ public class Ecuacion {
     
     
     public Ecuacion(){
-        
+        this(0,0,0);
     }
+    
+    
+    // constructor sobrecargado 1
+    public Ecuacion(int a, int b, int c){
+        this.a=a;
+        this.b=b;
+        this.c=c;
+    }
+    
+   
+    // contructor sobrecargado 2
+    public Ecuacion(int a, int b){
+         this(a,b,0);
+    }
+    
+    public Ecuacion(int a){
+         this(a,0,0);
+    }
+    
     
     public int getA(){
         return this.a;
